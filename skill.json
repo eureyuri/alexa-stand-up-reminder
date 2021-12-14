@@ -1,0 +1,84 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Reminds you to stand up every 45 minutes and to take a 5 minutes break. During the break, we suggest fun and relaxing activities to boost up your productivity!",
+          "examplePhrases": [
+            "Alexa, open stand up reminder",
+            "Alexa, start stand up reminder",
+            "three"
+          ],
+          "keywords": [
+            "stand",
+            "up",
+            "reminder",
+            "help",
+            "studying",
+            "working",
+            "concentrate",
+            "productivity",
+            "fun",
+            "activities",
+            "backpain",
+            "pain-relief",
+            "move"
+          ],
+          "name": "Stand Up Reminder",
+          "description": "The Stand Up Reminder reminds you to work for 45 minutes then stand up for 5 minutes to take a break. You can specify the number of rounds for the work session and we will keep reminding you! \nDuring the 5 minutes break, we suggest random activities that you can enjoy to relax and have fun. By actually resting during this time, your mind will be rejuvenated to tackle problems and strive through the next work sessions. \n\nOut motivation behind this skill is to help you move your body because sitting for a long time has some serious health concerns and we wanted to help you in a natural way.\n\nTo cancel reminders, say \"Alexa, cancel stand up reminder\" or \"Alexa, cancel all reminders\".",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Hardware: Echo Show\nPermissions needed: Reminder \n\nStart by saying: \"Alexa open stand up reminder\"\nThen our skill will prompt for how many rounds you would like to schedule, this can be any integer. \nWhen 45 minutes is past, the skill will remind you to stand up and take a break. After another 5 minutes, it will remind you to go back to work.",
+      "category": "ORGANIZERS_AND_ASSISTANTS",
+      "distributionMode": "PUBLIC",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:894923882955:function:28b519f2-ba3e-4c5f-b4d2-0ffe57251a08:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:894923882955:function:28b519f2-ba3e-4c5f-b4d2-0ffe57251a08:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:894923882955:function:28b519f2-ba3e-4c5f-b4d2-0ffe57251a08:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:894923882955:function:28b519f2-ba3e-4c5f-b4d2-0ffe57251a08:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::alerts:reminders:skill:readwrite"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
